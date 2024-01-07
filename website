@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event){
+                if(this.hash !== ""){
+                    event.preventDefault();
+                    var hash = this.hash
+                    $('html, body').animate({
+                        scrollTop:$(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="banner" id="homepage">
+        <div class="navbar">
+            <div class="logo">Suramu Danku(スラムダンク)</div>
+            <ul>
+                <li id="home">
+                    <a href="#homepage">Home</a>
+                </li>
+                <li id="newspage">
+                    <a href="#news">News</a>
+                </li>
+                <li id="about">
+                    <a href="#aboutpage">About Us</a>
+                </li>
+                <li id="gallery">
+                    <a href="#gallerypage">Gallery</a>
+                </li>
+                <li id="testimony">
+                    <a href="#">Testimony</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Suramu Danku(スラムダンク)</h1>
+            <p>For more video please subscribe to Slam Dunk channel!</p>
+            <div class="buttons">
+                <button type="button"><span></span>Read More</button>
+                <button type="button"><span></span>Watch More</button>
+            </div>
+        </div>
+    </div>
+    <!-- News Page -->
+    <div class="blog-section" id="news">
+        <div class="section-content">
+            <div class="slam-dunk-title">
+                <h2>Slam Dunk News</h2>
+                <p>Events handled and participated in Slam Dunk</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="img/card1.jpg" alt="card1">
+                    </div>
+                    <div class="article">
+                        <h4>Dwight Howard wows at Slam Dunk 20 years ago</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum fugiat earum qui natus ea, reiciendis iste quasi quod enim commodi magnam facilis nihil, delectus atque aut, animi laboriosam porro odio.</p>
+                    </div>
+                    <div class="blog-view">
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                    <div class="posted-date">
+                        <p>Date Posted: December 26, 2023</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="image-section">
+                        <img src="img/card2.webp" alt="card1">
+                    </div>
+                    <div class="article">
+                        <h4>Slam Dunk Creator Addresses Sequel Rumors</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In laborum obcaecati sequi, maiores commodi dignissimos magnam, magni praesentium iusto doloribus alias incidunt, dolorem sit ullam rem doloremque ipsa inventore veniam.</p>
+                    </div>
+                    <div class="blog-view">
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                    <div class="posted-date">
+                        <p>Date Posted: December 26, 2023</p>
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="image-section">
+                        <img src="img/card4.jpg" alt="card1">
+                    </div>
+                    <div class="article">
+                        <h4>The inspiration continues for SLAM DUNK and AKATSUKI JAPAN
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus natus repudiandae cum esse quis ullam unde sunt deserunt id consectetur vel vero explicabo veritatis, quod at quas distinctio tempore suscipit!</p>
+                    </div>
+                    <div class="blog-view">
+                        <a href="#" class="button">Read More</a>
+                    </div>
+                    <div class="posted-date">
+                        <p>Date Posted: December 26, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Page -->
+    <div class="about-section" id="aboutpage">
+        <div class="heading">
+            <h1>About Us</h1>
+            <p>This page contains Slam Dunk History</p>
+        </div>
+        <div class="container">
+            <section class="about">
+                <div class="about-image">
+                    <img src="img/about_bg.jpg" alt="About Slam Dunk">
+                </div>
+                <div class="about-content">
+                    <h2>Slam Dunk History</h2>
+                    <p>Slam Dunk is a Japanese sports manga series written and illustrated by Takehiko Inoue. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump from October 1990 to June 1996, with the chapters collected into 31 tankōbon volumes. It tells the story of a basketball team from Shōhoku High School in the Shōnan area of Japan. The manga was adapted into an anime television series by Toei Animation which aired from October 1993 to March 1996 and has been broadcast worldwide, enjoying much popularity particularly in Japan, several other Asian countries and Europe. An anime feature film, titled The First Slam Dunk, was released in Japan in December 2022. Slam Dunk has 170 million copies in circulation, making it the seventh best-selling manga series in history. In 1994, it received the 40th Shogakukan Manga Award for the shōnen category. Slam Dunk is considered a widely influential manga series in Japan, with its success has been cited as a cause for the increased popularity of basketball among the Japanese youth during the 1990s, and has been regarded as one of the greatest sports manga series of all time. In 2010, Inoue received special commendations from the Japan Basketball Association for helping popularize basketball in Japan.</p>
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/Slam_Dunk_(manga)" class="read-more">Read More</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Gallery Page -->
+    <div class="gallery" id="gallerypage">
+        <input type="radio" name="photos" id="check1" checked>
+        <input type="radio" name="photos" id="check2">
+        <input type="radio" name="photos" id="check3">
+        <input type="radio" name="photos" id="check4">
+        <div class="gallery-container">
+            <h1>Photo Gallery</h1>
+            <div class="top-content">
+                <h3>Photo Gallery</h3>
+                <label for="check1">All Photos</label>
+                <label for="check2">Event Photos</label>
+                <label for="check3">Bonding Photos</label>
+                <label for="check4">Outing Photos</label>
+            </div>
+            <div class="photo-gallery">
+                <div class="pic Events">
+                    <img src="img/photo1.jpg" alt="photo 1">
+                </div>
+                <div class="pic Bonding">
+                    <img src="img/photo2.jpg" alt="photo 2">
+                </div>
+                <div class="pic Outing">
+                    <img src="img/photo3.jpg" alt="photo 3">
+                </div>
+                <div class="pic Events">
+                    <img src="img/photo4.jpg" alt="photo 4">
+                </div>
+                <div class="pic Bonding">
+                    <img src="img/photo5.jpg" alt="photo 5">
+                </div>
+                <div class="pic Outing"> 
+                    <img src="img/photo6.webp" alt="photo 6">
+                </div>
+                <div class="pic Events"> 
+                    <img src="img/photo7.jpg" alt="photo 7">
+                </div>
+                <div class="pic Bonding"> 
+                    <img src="img/photo8.jpg" alt="photo 8">
+                </div>
+                <div class="pic Outing"> 
+                    <img src="img/photo9.jpg" alt="photo 9">
+                </div>
+                <div class="pic Events"> 
+                    <img src="img/photo10.jpg" alt="photo 10">
+                </div>
+                <div class="pic Bonding"> 
+                    <img src="img/photo11.jpg" alt="photo 11">
+                </div>
+                <div class="pic Outing"> 
+                    <img src="img/photo12.jpg" alt="photo 12">
+                </div>
+            </div>
+        </div>
+    </div>
+</body> 
+</html>
